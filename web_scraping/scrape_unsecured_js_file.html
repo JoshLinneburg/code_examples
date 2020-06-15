@@ -13129,7 +13129,7 @@ div#notebook {
 <p>Okay - had to show off some cool Jupyter Notebook functionality there (image embeds just like a webpage!) with one of my <a href="https://www.rottentomatoes.com/m/the_social_network">all-time favorite movies</a>. But anyway, this is where the fun (hacking, but nobody says "hack" anymore) starts.</p>
 <p>Let's navigate to the GAC Toyota site and load up the dealer searching portal. At the time of the time of this writing, <a href="https://www.gac-toyota.com.cn/buy/shopping/dealer-search">this</a> is the URL.</p>
 <p>Our goal, similar to Mark Zuckerberg in this scene, is to make requests to a server which returns us some data we want to use, store, manipulate, etc. If you've seen the movie, you'll know his goal was a little less professional than ours. In his case, he wants to return pictures of classmates from the Harvard dorm facebooks. In our case, we want to retrieve information about car dealerships in China. But still, the basic premise is the same: We want to take advantage of exposed API endpoints, JavaScript functions, hosted .data/.html/.json/.txt files, HTML structures, etc. to get what we want from a website.</p>
-<p><i>Sidenote: I should probably pause here and tell you that if you want to be a good, upstanding Citizen of the Internet, I'd advise you to not maliciously gather data you're not authorized to see, use, etc. Always look up a site's [robots.txt](https://en.wikipedia.org/wiki/Robots_exclusion_standard) to see if they allow scraping on the site, and always adhere to any local, state or federal regulations while gathering data. API's are generally more forgiving (and should specify useage and rate limits) whereas traditional scraping is less so. Use good judgement and always remember... <img src=images/with_great_power_comes_great_responsibility.gif></i></p>
+<p><i>Sidenote: I should probably pause here and tell you that if you want to be a good, upstanding Citizen of the Internet, I'd advise you to not maliciously gather data you're not authorized to see, use, etc. Always look up a site's robots.txt to see if they allow scraping on the site, and always adhere to any local, state or federal regulations while gathering data. API's are generally more forgiving (and should specify useage and rate limits) whereas traditional scraping is less so. Use good judgement and always remember... <img src=images/with_great_power_comes_great_responsibility.gif></i></p>
 
 </div>
 </div>
@@ -13144,6 +13144,7 @@ div#notebook {
 If so, you're probably looking at a situation where you'll be parsing HTML using BeautifulSoup.</p>
 <p><b>Are there any `XHR` or `JS` requests that have promising names?</b>
 If so, you might be looking at a situation where you can make a request to one of those endpoint URLs instead of the page itself.</p>
+<p>Explore the page and the functionality you want to stress-test. Want to retrieve dealership data based upon a city and province search? Change cities and provinces, search for them, and see what requests the page makes to display that data.</p>
 <p>Remember, someone had to create this website. So if they wanted to make their life easier, they'd probably follow some generally-accepted-programming principles like:</p>
 <ul>
 <li>Name your files descriptively</li>
@@ -13232,10 +13233,14 @@ If so, you might be looking at a situation where you can make a request to one o
     <span class="k">try</span><span class="p">:</span>
         
         <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">requests</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">Response</span><span class="p">):</span>
-        
             <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;The text of the response object returns a str with {len(obj.text)} characters!&#39;</span><span class="p">)</span>
             <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
             <span class="nb">print</span><span class="p">(</span><span class="n">obj</span><span class="o">.</span><span class="n">text</span><span class="p">[:</span><span class="n">n_chars</span><span class="p">])</span> <span class="c1"># Only returns the first 500 char&#39;s</span>
+        
+        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;The object passed in is a str with {len(obj)} characters!&#39;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">obj</span><span class="p">[:</span><span class="n">n_chars</span><span class="p">])</span> <span class="c1"># Only returns the first 500 char&#39;s</span>
         
         <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
             <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;The object passed in is a list with {len(obj)} items!&#39;</span><span class="p">)</span>
@@ -13541,7 +13546,7 @@ var dealerJson =[
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Very nice! Now we've got a <code>list</code> of <code>dicts</code>, a nice data structure for us to work with!</p>
 <p>One thing to note here which shows me that we're not done yet: I don't see any actual name for the city or province. And I think that might be important to keep. I see a numeric <code>City</code> code, but it's not anything we can use right now.</p>
-<p>Somehow, the page must be able to translate the Mandarin string containing the province and city and decode that into a numeric ID. So, it'd stand to reason there's some way to translate the combination of a city and province to an ID. We should be able to go the other way around, right?</p>
+<p>Somehow, the page must be able to translate the Mandarin string containing the province and city and decode that into a numeric ID. So, it'd stand to reason there's some way to translate the ID to the province and city combination. We should be able to go the other way around, right?</p>
 <p><i> Sidenote: If this `City` was a hash-value, probably not without knowing the hashing algorithm. But since it looks like a generic code and that we found this .js file on the site for anyone to use publicly in the first place, I'm thinking we're smarter than this! </i></p>
 <p>Let's go back to the page and see if any of those JS requests make any sense to investigate. Remember, there was the dealerData.js request that we just used. But there was a cityData.js request and a provinceData.js request too. Those might be the way to go.</p>
 
