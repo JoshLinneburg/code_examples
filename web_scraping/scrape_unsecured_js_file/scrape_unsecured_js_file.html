@@ -13188,20 +13188,20 @@ If so, you might be looking at a situation where you can make a request to one o
 <p>What I'm getting at here is: If the developer created a REST endpoint for retrieving dealership data, they probably wouldn't structure the endpoint name like: <a href="https://api.toyota.com/v1/vehicle_catalog">https://api.toyota.com/v1/vehicle_catalog</a>. It's probably something more like: <a href="https://api.toyota.com/v1/dealers">https://api.toyota.com/v1/dealers</a> or something to that effect. Because the code that drives the site has to be maintained, you can usually count on it making some sense to follow. Unless the developer was disgruntled and named all the files different kinds of beer. Then you might be in some trouble.</p>
 <p>Anyway...</p>
 <p>These are the JavaScript Network requests the Toyota page makes to load a given province and city's dealership data: 
-<img src=../images/javascript_requests.png align="center">
+<img src=../images/gac_javascript_requests.png align="center">
 <br>
 <br></p>
 <p>See any that look promising? This group right here might prove useful, especially one labeled <code>dealerData.js</code>. 
-<img src=../images/useful_javascript_requests.png align="center">
+<img src=../images/gac_useful_javascript_requests.png align="center">
 <br>
 <br></p>
 <p>You can click on a request to see more details about it, like so:
-<img src=../images/dealer_data_js.png align="center">
+<img src=../images/gac_dealer_data_js.png align="center">
 <br>
 <br></p>
 <p>This opens up another submenu. Here we can see the URL it's making a request to, <a href="https://www.gac-toyota.com.cn/js/newprovincecitydealer/data/dealerData.js">https://www.gac-toyota.com.cn/js/newprovincecitydealer/data/dealerData.js</a>, any headers (parameters or settings) it's sending with the request, and the HTTP method for the request itself (GET).</p>
 <p>You can also see the server's response to this request by clicking on the <code>Response</code> tab of this new submenu which has appeared. In this case, it shows us the data the GET request is returning.
-<img src=../images/dealer_data_response.png align="center">
+<img src=../images/gac_dealer_data_response.png align="center">
 <br>
 <br></p>
 <p>Oooooh! A quick visual inspect of this response reveals it is over 10,000 lines in length and contains all of the data this page could ever want to load for a given province and city combination. I think we've found our golden ticket!</p>
@@ -13382,7 +13382,7 @@ var dealerJson =[
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="StackOverflow-to-the-Rescue!">StackOverflow to the Rescue!<a class="anchor-link" href="#StackOverflow-to-the-Rescue!">&#182;</a></h3><p>The first <a href="https://stackoverflow.com/questions/16573332/jsondecodeerror-expecting-value-line-1-column-1-char-0">StackOverflow question</a> I found after <a href="https://lmgtfy.com/?q=JSONDecodeError%3A+Expecting+value%3A+line+1+column+1+(char+0">Googling</a>) this error seems to offer some insight.</p>
 <p>Here's the second-most upvoted answer as of this writing: 
-<img src=../images/json_decode_error.png align="center"></p>
+<img src=../images/gac_json_decode_error.png align="center"></p>
 <p>Huh? The character in the first position (char 0) does not conform to JSON's structure.</p>
 <p>Let's review what a JSON object should look like then:</p>
 <p><img src="https://i2.wp.com/techeplanet.com/wp-content/uploads/2019/01/json-example.jpg?w=608&ssl=1" align="center"></p>
