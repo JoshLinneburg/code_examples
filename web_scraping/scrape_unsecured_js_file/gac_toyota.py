@@ -90,7 +90,7 @@ def main():
 
         # Write out the file
         # NOTE: This writes
-        mbtools.make_tsv(L1=locations, file_name='../data/gac_toyota', keys=mykeys)
+        mbtools.make_tsv(L1=locations, file_name='../data/output/gac_toyota', keys=mykeys)
 
         output_log(filename='../logs/gac_toyota_output.log',
                    text=f'File of length {len(locations)} written successfully!',
