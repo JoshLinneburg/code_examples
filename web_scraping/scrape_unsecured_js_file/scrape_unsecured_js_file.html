@@ -14587,19 +14587,37 @@ For each item in <code>city_results</code>, I want to take the integer of the it
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now we can write out the file!</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">mykeys</span><span class="o">=</span><span class="s1">&#39;address,brand,city,lat,lon,name,phone,province,url&#39;</span>
-<span class="n">mbtools</span><span class="o">.</span><span class="n">make_tsv</span><span class="p">(</span><span class="n">L1</span><span class="o">=</span><span class="n">locations</span><span class="p">,</span> <span class="n">file_name</span><span class="o">=</span><span class="s1">&#39;gac_toyota&#39;</span><span class="p">,</span> <span class="n">keys</span><span class="o">=</span><span class="n">mykeys</span><span class="p">)</span>
+<span class="n">mbtools</span><span class="o">.</span><span class="n">make_tsv</span><span class="p">(</span><span class="n">L1</span><span class="o">=</span><span class="n">locations</span><span class="p">,</span> <span class="n">file_name</span><span class="o">=</span><span class="s1">&#39;../data/gac_toyota&#39;</span><span class="p">,</span> <span class="n">keys</span><span class="o">=</span><span class="n">mykeys</span><span class="p">)</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>One last thing to note here: I'm not writing out the file in <i>this</i> directory. If you go up one directory and then down into the <code>data</code> directory, you'll find <code>gac_toyota.txt</code>. That's what the <code>../data</code> part means above:</p>
+<p><code>../</code> means the parent directory to the current one<br>
+<code>../data</code> means the <code>data</code> directory which is a child of the current directory's parent</p>
+
+</div>
+</div>
 </div>
     </div>
   </div>

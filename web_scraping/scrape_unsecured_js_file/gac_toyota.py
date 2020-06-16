@@ -89,9 +89,10 @@ def main():
         print(f'Writing out a file with {len(locations)} records!')
 
         # Write out the file
-        mbtools.make_tsv(L1=locations, file_name='gac_toyota', keys=mykeys)
+        # NOTE: This writes
+        mbtools.make_tsv(L1=locations, file_name='../data/gac_toyota', keys=mykeys)
 
-        output_log(filename='output.log',
+        output_log(filename='../logs/gac_toyota_output.log',
                    text=f'File of length {len(locations)} written successfully!',
                    append=True)
 
@@ -99,7 +100,7 @@ def main():
     except:
         exc = sys.exc_info()
         exc_str = output_exception(exc=exc)
-        output_log(filename='output.log',
+        output_log(filename='../logs/gac_toyota_output.log',
                    text=exc_str,
                    append=True)
 
