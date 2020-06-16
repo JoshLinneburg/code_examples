@@ -13,6 +13,9 @@ secrets.py
 # Scratch files
 *scratch*
 
+# Log files
+*.log*
+
 # Cache files
 *cache*.json
 
