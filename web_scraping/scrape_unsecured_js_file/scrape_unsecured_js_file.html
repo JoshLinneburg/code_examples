@@ -13101,7 +13101,7 @@ div#notebook {
 <p>Notice how I'm importing mbtools from a different directory, utils, compared to the one I'm in, scrape_unsecured_js_file, so the import is structured like:</p>
 <div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">utils.mbtools</span> <span class="k">as</span> <span class="nn">mbtools</span>
 </pre></div>
-<p>This is possible because of the first code block below. The first code block finds the parent directory, and inserts the parent directory on the system PATH variable in the 1st (in a 0-indexed system, so technically second) position. That way, when I try to do my mbtools import from the utils directory, it still works.</p>
+<p>This is possible because of the first code block below. What this does is it adds the <code>lib</code> directory that contains the <code>example_utils.py</code> and <code>mbtools.py</code> files to the PATH.</p>
 
 </div>
 </div>
@@ -13111,19 +13111,9 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># These three are built-in to Python3 and above, you do not have to pip install them</span>
-<span class="kn">import</span> <span class="nn">inspect</span>
-<span class="kn">import</span> <span class="nn">os</span>
-<span class="kn">import</span> <span class="nn">sys</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
 
-<span class="c1"># Find current directory</span>
-<span class="n">current_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">inspect</span><span class="o">.</span><span class="n">getfile</span><span class="p">(</span><span class="n">inspect</span><span class="o">.</span><span class="n">currentframe</span><span class="p">())))</span>
-
-<span class="c1"># Find the parent of the current directory</span>
-<span class="n">parent_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">current_dir</span><span class="p">)</span>
-
-<span class="c1"># Add the parent to the PATH so Python can find modules like utils which contain Python code</span>
-<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">parent_dir</span><span class="p">)</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;../lib&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13146,9 +13136,9 @@ div#notebook {
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">json</span>
 <span class="kn">import</span> <span class="nn">requests</span>
-<span class="kn">import</span> <span class="nn">utils.mbtools</span> <span class="k">as</span> <span class="nn">mbtools</span>
-<span class="kn">from</span> <span class="nn">utils.helpers</span> <span class="kn">import</span> <span class="n">show_obj_head</span> <span class="k">as</span> <span class="n">show_obj_head</span>
-<span class="kn">from</span> <span class="nn">utils.helpers</span> <span class="kn">import</span> <span class="n">equivalence_checker</span> <span class="k">as</span> <span class="n">equivalence_checker</span>
+<span class="kn">import</span> <span class="nn">mbtools</span>
+<span class="kn">from</span> <span class="nn">example_utils</span> <span class="kn">import</span> <span class="n">show_obj_head</span> <span class="k">as</span> <span class="n">show_obj_head</span>
+<span class="kn">from</span> <span class="nn">example_utils</span> <span class="kn">import</span> <span class="n">equivalence_checker</span> <span class="k">as</span> <span class="n">equivalence_checker</span>
 <span class="kn">import</span> <span class="nn">pprint</span> <span class="c1"># For pretty printing JSON-like objects</span>
 </pre></div>
 
