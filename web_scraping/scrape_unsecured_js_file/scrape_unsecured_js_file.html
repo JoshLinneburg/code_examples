@@ -13098,10 +13098,10 @@ div#notebook {
 <li>mbtools : a custom-made module that has a bunch of useful functions for web scraping</li>
 </ul>
 <p>Unfortunately, the name of the author of mbtools has been lost to time. So I can't give them credit in this Notebook for their work.</p>
-<p>Notice how I'm importing mbtools from a different directory, utils, compared to the one I'm in, scrape_unsecured_js_file, so the import is structured like:</p>
+<p>Notice how I'm importing <code>mbtools</code> from a different directory, <code>lib</code>, compared to the one I'm in, <code>scrape_unsecured_js_file</code>, so the import is structured like:</p>
 <div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">utils.mbtools</span> <span class="k">as</span> <span class="nn">mbtools</span>
 </pre></div>
-<p>This is possible because of the first code block below. What this does is it adds the <code>lib</code> directory that contains the <code>example_utils.py</code> and <code>mbtools.py</code> files to the PATH.</p>
+<p>This is possible because of the first code block below. What this does is it adds the <code>lib</code> directory that contains the <code>scraping_utils.py</code> and <code>mbtools.py</code> files to the PATH.</p>
 
 </div>
 </div>
@@ -13137,8 +13137,8 @@ div#notebook {
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">json</span>
 <span class="kn">import</span> <span class="nn">requests</span>
 <span class="kn">import</span> <span class="nn">mbtools</span>
-<span class="kn">from</span> <span class="nn">example_utils</span> <span class="kn">import</span> <span class="n">show_obj_head</span> <span class="k">as</span> <span class="n">show_obj_head</span>
-<span class="kn">from</span> <span class="nn">example_utils</span> <span class="kn">import</span> <span class="n">equivalence_checker</span> <span class="k">as</span> <span class="n">equivalence_checker</span>
+<span class="kn">from</span> <span class="nn">scraping_utils</span> <span class="kn">import</span> <span class="n">show_obj_head</span> <span class="k">as</span> <span class="n">show_obj_head</span>
+<span class="kn">from</span> <span class="nn">scraping_utils</span> <span class="kn">import</span> <span class="n">equivalence_checker</span> <span class="k">as</span> <span class="n">equivalence_checker</span>
 <span class="kn">import</span> <span class="nn">pprint</span> <span class="c1"># For pretty printing JSON-like objects</span>
 </pre></div>
 
@@ -13151,7 +13151,7 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Keep this in mind as you're moving custom module and utility files around: The project structure is very important and you'll spend a ton of time fixing path issues, relative import issues, etc. if you're not carful.</p>
-<p>If you'd like to see the <code>show_obj_head</code> and <code>equivalence_checker</code> code separately, take a look at the "helpers.py" file located in the "utils" directory. This is where these helper functions are stored.</p>
+<p>If you'd like to see the <code>show_obj_head</code> and <code>equivalence_checker</code> code separately, take a look at the <code>scraping_utils.py</code> file located in the <code>lib</code> directory. This is where these helper functions are stored.</p>
 
 </div>
 </div>
