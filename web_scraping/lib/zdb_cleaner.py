@@ -4,7 +4,7 @@ from scraping_utils import output_exception
 from scraping_utils import output_log
 
 
-def main():
+def clean_zdb():
     """
     Cleans the zdb.txt file used in the web scraping process and makes it into a
     properly-formatted JSON file.
@@ -40,4 +40,4 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    clean_zdb()
