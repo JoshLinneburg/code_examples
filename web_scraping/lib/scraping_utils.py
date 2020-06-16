@@ -144,3 +144,22 @@ def output_log(filename, text, append=True):
                    text=text)
         print(text)
 
+
+def read_json(path_to_file):
+    """
+    Reads in a .json file and returns the data as a dict or list
+
+    Parameters
+    ----------
+    path_to_file : str
+        The path to the .json file, including the file name and the extension
+
+    Returns
+    -------
+    data : dict or list
+        The data of the JSON file, decoded into a Python dict or list object
+    """
+    with open(path_to_file, 'r+', encoding='UTF-8') as f:
+        data = json.load(f)
+
+    return data
