@@ -5,8 +5,8 @@ sys.path.insert(0, '../lib')
 import json
 import requests
 import mbtools
-from example_utils import output_exception
-from example_utils import output_log
+from scraping_utils import output_exception
+from scraping_utils import output_log
 
 
 def main():
@@ -91,7 +91,7 @@ def main():
         # Write out the file
         mbtools.make_tsv(L1=locations, file_name='gac_toyota', keys=mykeys)
 
-        output_log(filename='scrape_unsecured_js_file.log',
+        output_log(filename='output.log',
                    text=f'File of length {len(locations)} written successfully!',
                    append=True)
 
@@ -99,7 +99,7 @@ def main():
     except:
         exc = sys.exc_info()
         exc_str = output_exception(exc=exc)
-        output_log(filename='scrape_unsecured_js_file.log',
+        output_log(filename='output.log',
                    text=exc_str,
                    append=True)
 
