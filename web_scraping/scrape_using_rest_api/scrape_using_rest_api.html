@@ -14148,7 +14148,6 @@ The object passed in is a list with 100 items!
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>d['other'] = mbtools.list_to_csv(list(set([attr['Name'] for attr in res['Attributes']])))</p>
 <p>That's all well and good, but we can't just write this file out how we have it. We want to extract some information from it first.</p>
 <p>Well, that's what we're about to do below.</p>
 <p>We want to take every item in the <code>unique_results</code> <code>list</code> and extract some data from it like the name, address, etc. Same as before.</p>
@@ -14156,7 +14155,7 @@ The object passed in is a list with 100 items!
 <p>The original code looked something like:</p>
 <div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">res</span> <span class="ow">in</span> <span class="n">unique_results</span><span class="p">:</span>
     <span class="n">d</span> <span class="o">=</span> <span class="p">{}</span>
-
+    <span class="c1"># Some stuff here</span>
     <span class="n">services</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">svc</span> <span class="ow">in</span> <span class="n">res</span><span class="p">[</span><span class="s1">&#39;Attributes&#39;</span><span class="p">]:</span>
         <span class="k">if</span> <span class="n">svc</span><span class="p">[</span><span class="s1">&#39;Name&#39;</span><span class="p">]</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">services</span><span class="p">:</span>
@@ -14166,6 +14165,7 @@ The object passed in is a list with 100 items!
 <p>Which is perfectly fine, except we can do better. Here's my solution:</p>
 <div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">res</span> <span class="ow">in</span> <span class="n">unique_results</span><span class="p">:</span>
     <span class="n">d</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="c1"># Some stuff here</span>
     <span class="n">d</span><span class="p">[</span><span class="s1">&#39;other&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">mbtools</span><span class="o">.</span><span class="n">list_to_csv</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">([</span><span class="n">attr</span><span class="p">[</span><span class="s1">&#39;Name&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">attr</span> <span class="ow">in</span> <span class="n">res</span><span class="p">[</span><span class="s1">&#39;Attributes&#39;</span><span class="p">]])))</span>
 </pre></div>
 <p>Let's break this down...</p>
