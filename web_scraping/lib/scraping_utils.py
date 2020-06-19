@@ -11,18 +11,18 @@ def show_obj_head(obj, n_chars=500, n_items=5):
     Parameters
     ----------
     obj : object
-        Any Python object; has to be a str, list, dict or requests.model.Response to return a value
+        Any Python object; has to be a str, list, dict or requests.model.Response to return a value.
 
     n_chars : int (optional)
-        Number of characters to return if the object is a str or requests.model.Response
+        Number of characters to return if the object is a str or requests.model.Response.
 
     n_items : int (optional)
-        Number of items to return if the object is a list
+        Number of items to return if the object is a list.
 
     Returns
     -------
     result : obj
-        A str, list or dict containing the "head" of the data supplied to the function
+        A str, list or dict containing the "head" of the data supplied to the function.
 
     """
     try:
@@ -67,7 +67,7 @@ def equivalence_checker(obj_one, obj_two, expected_value):
         Any Python object
 
     expected_value : bool
-        TRUE or FALSE; the expected value when obj_one is compared to obj_two
+        TRUE or FALSE; the expected value when obj_one is compared to obj_two.
 
     Returns
     -------
@@ -88,7 +88,7 @@ def output_exception(exc):
     Parameters
     ----------
     exc : Python exception object.
-        A captured Python exception: exc = sys.exc_info(); exc_str = au.output_exception(exc=exc)
+        A captured Python exception: exc = sys.exc_info(); exc_str = au.output_exception(exc=exc).
 
     Returns
     -------
@@ -149,22 +149,56 @@ def output_log(filename, text, append=True):
 
 def read_json(path_to_file):
     """
-    Reads in a .json file and returns the data as a dict or list
+    Reads in a .json file and returns the data as a dict or list.
 
     Parameters
     ----------
     path_to_file : str
-        The path to the .json file, including the file name and the extension
+        The path to the .json file, including the file name and the extension.
 
     Returns
     -------
     data : dict or list
-        The data of the JSON file, decoded into a Python dict or list object
+        The data of the JSON file, decoded into a Python dict or list object.
     """
     with open(path_to_file, 'r+', encoding='UTF-8') as f:
         data = json.load(f)
 
     return data
+
+
+def write_json(path_to_file, data, ensure_ascii=True, encoding='UTF-8', indent=4):
+    """
+    Writes out a JSON-like structure to the file of your choice.
+
+    Parameters
+    ----------
+    path_to_file : str
+        Path to the new file, including file name and extension.
+
+    data : JSON-like structure
+        Data to write to new file.
+
+    ensure_ascii : bool
+        Whether non-ASCII characters should be escaped in the file output. If set to False,
+        these characters will appear "raw" in the file, True will escape the characters, optional.
+
+    encoding : str
+        Encoding to use when opening the file, optional.
+
+    indent : int
+        Number of spaces to indent for new lines in JSON structure. Default is 4. Optional.
+
+    Returns
+    -------
+    None.
+    """
+
+    with open(path_to_file, 'w+', encoding=encoding) as writer:
+        json.dump(obj=data,
+                  fp=writer,
+                  ensure_ascii=ensure_ascii,
+                  indent=indent)
 
 
 def clean_list_of_dicts(original_file_path, new_file_path=None, str_fields=None, int_fields=None, float_fields=None):
@@ -220,8 +254,7 @@ def clean_list_of_dicts(original_file_path, new_file_path=None, str_fields=None,
                         entry[key] = float(value)
 
         if new_file_path:
-            with open(new_file_path, 'w+', encoding='UTF-8') as writer:
-                json.dump(obj=data, fp=writer, ensure_ascii=True, indent=4)
+            write_json(path_to_file=new_file_path, data=data)
 
         return data
 

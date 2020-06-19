@@ -1,0 +1,1360 @@
+[
+    {
+        "lat": 42.377651,
+        "city": "Amherst",
+        "state": "MA",
+        "lon": -72.50323,
+        "zip": "01002"
+    },
+    {
+        "lat": 41.894676,
+        "city": "Plymouth",
+        "state": "MA",
+        "lon": -70.61999,
+        "zip": "02360"
+    },
+    {
+        "lat": 44.313606,
+        "city": "Littleton",
+        "state": "NH",
+        "lon": -71.79751,
+        "zip": "03561"
+    },
+    {
+        "lat": 44.344406,
+        "city": "Augusta",
+        "state": "ME",
+        "lon": -69.76345,
+        "zip": "04330"
+    },
+    {
+        "lat": 45.646916,
+        "city": "Millinocket",
+        "state": "ME",
+        "lon": -68.74801,
+        "zip": "04462"
+    },
+    {
+        "lat": 47.209541,
+        "city": "Fort Kent",
+        "state": "ME",
+        "lon": -68.57238,
+        "zip": "04743"
+    },
+    {
+        "lat": 41.075663,
+        "city": "Darien",
+        "state": "CT",
+        "lon": -73.48294,
+        "zip": "06820"
+    },
+    {
+        "lat": 39.932279,
+        "city": "Cherry Hill",
+        "state": "NJ",
+        "lon": -75.02266,
+        "zip": "08002"
+    },
+    {
+        "lat": 42.696926,
+        "city": "Cobleskill",
+        "state": "NY",
+        "lon": -74.52436,
+        "zip": "12043"
+    },
+    {
+        "lat": 44.83218,
+        "city": "Ellenburg Depot",
+        "state": "NY",
+        "lon": -73.80001,
+        "zip": "12935"
+    },
+    {
+        "lat": 42.922273,
+        "city": "Auburn",
+        "state": "NY",
+        "lon": -76.55882,
+        "zip": "13021"
+    },
+    {
+        "lat": 42.633375,
+        "city": "Angola",
+        "state": "NY",
+        "lon": -79.04567,
+        "zip": "14006"
+    },
+    {
+        "lat": 40.603966,
+        "city": "Aliquippa",
+        "state": "PA",
+        "lon": -80.28776,
+        "zip": "15001"
+    },
+    {
+        "lat": 39.998096,
+        "city": "Bedford",
+        "state": "PA",
+        "lon": -78.52204,
+        "zip": "15522"
+    },
+    {
+        "lat": 41.173254,
+        "city": "Montgomery",
+        "state": "PA",
+        "lon": -76.88449,
+        "zip": "17752"
+    },
+    {
+        "lat": 38.634306,
+        "city": "Waldorf",
+        "state": "MD",
+        "lon": -76.86008,
+        "zip": "20601"
+    },
+    {
+        "lat": 38.426786,
+        "city": "Harrisonburg",
+        "state": "VA",
+        "lon": -78.88153,
+        "zip": "22801"
+    },
+    {
+        "lat": 36.761698,
+        "city": "Chesapeake",
+        "state": "VA",
+        "lon": -76.24511,
+        "zip": "23320"
+    },
+    {
+        "lat": 36.61665,
+        "city": "Clarksville",
+        "state": "VA",
+        "lon": -78.54018,
+        "zip": "23927"
+    },
+    {
+        "lat": 37.136013,
+        "city": "Christiansburg",
+        "state": "VA",
+        "lon": -80.41222,
+        "zip": "24073"
+    },
+    {
+        "lat": 36.851953,
+        "city": "Big Stone Gap",
+        "state": "VA",
+        "lon": -82.77056,
+        "zip": "24219"
+    },
+    {
+        "lat": 38.417852,
+        "city": "Nitro",
+        "state": "WV",
+        "lon": -81.8321,
+        "zip": "25143"
+    },
+    {
+        "lat": 35.351477,
+        "city": "Albemarle",
+        "state": "NC",
+        "lon": -80.19879,
+        "zip": "28001"
+    },
+    {
+        "lat": 35.000056,
+        "city": "Clinton",
+        "state": "NC",
+        "lon": -78.33424,
+        "zip": "28328"
+    },
+    {
+        "lat": 35.185018,
+        "city": "Franklin",
+        "state": "NC",
+        "lon": -83.39032,
+        "zip": "28734"
+    },
+    {
+        "lat": 33.272026,
+        "city": "Bamberg",
+        "state": "SC",
+        "lon": -81.03203,
+        "zip": "29003"
+    },
+    {
+        "lat": 33.467343,
+        "city": "Pawleys Island",
+        "state": "SC",
+        "lon": -79.1301,
+        "zip": "29585"
+    },
+    {
+        "lat": 33.844371,
+        "city": "Alpharetta",
+        "state": "GA",
+        "lon": -84.47405,
+        "zip": "30009"
+    },
+    {
+        "lat": 32.220155,
+        "city": "Vidalia",
+        "state": "GA",
+        "lon": -82.41493,
+        "zip": "30474"
+    },
+    {
+        "lat": 30.793409,
+        "city": "Kingsland",
+        "state": "GA",
+        "lon": -81.68428,
+        "zip": "31548"
+    },
+    {
+        "lat": 30.783639,
+        "city": "Quitman",
+        "state": "GA",
+        "lon": -83.55343,
+        "zip": "31643"
+    },
+    {
+        "lat": 29.204009,
+        "city": "Daytona Beach",
+        "state": "FL",
+        "lon": -81.03602,
+        "zip": "32114"
+    },
+    {
+        "lat": 30.195424,
+        "city": "Panama City",
+        "state": "FL",
+        "lon": -85.66458,
+        "zip": "32405"
+    },
+    {
+        "lat": 29.453178,
+        "city": "Chiefland",
+        "state": "FL",
+        "lon": -82.86837,
+        "zip": "32626"
+    },
+    {
+        "lat": 27.636828,
+        "city": "Vero Beach",
+        "state": "FL",
+        "lon": -80.40294,
+        "zip": "32960"
+    },
+    {
+        "lat": 25.902172,
+        "city": "Hialeah",
+        "state": "FL",
+        "lon": -80.30732,
+        "zip": "33014"
+    },
+    {
+        "lat": 24.567593,
+        "city": "Key West",
+        "state": "FL",
+        "lon": -81.7566,
+        "zip": "33040"
+    },
+    {
+        "lat": 28.016971,
+        "city": "Plant City",
+        "state": "FL",
+        "lon": -82.128584,
+        "zip": "33563"
+    },
+    {
+        "lat": 34.323715,
+        "city": "Arab",
+        "state": "AL",
+        "lon": -86.49278,
+        "zip": "35016"
+    },
+    {
+        "lat": 32.834501,
+        "city": "Clanton",
+        "state": "AL",
+        "lon": -86.64355,
+        "zip": "35045"
+    },
+    {
+        "lat": 31.876168,
+        "city": "Eufaula",
+        "state": "AL",
+        "lon": -85.17362,
+        "zip": "36027"
+    },
+    {
+        "lat": 31.129008,
+        "city": "Brewton",
+        "state": "AL",
+        "lon": -87.10173,
+        "zip": "36426"
+    },
+    {
+        "lat": 36.055115,
+        "city": "Antioch",
+        "state": "TN",
+        "lon": -86.64782,
+        "zip": "37013"
+    },
+    {
+        "lat": 35.590558,
+        "city": "Brownsville",
+        "state": "TN",
+        "lon": -89.2609,
+        "zip": "38012"
+    },
+    {
+        "lat": 33.380388,
+        "city": "Greenville",
+        "state": "MS",
+        "lon": -91.05187,
+        "zip": "38701"
+    },
+    {
+        "lat": 33.988235,
+        "city": "Amory",
+        "state": "MS",
+        "lon": -88.46783,
+        "zip": "38821"
+    },
+    {
+        "lat": 32.237742,
+        "city": "Brandon",
+        "state": "MS",
+        "lon": -89.93514,
+        "zip": "39042"
+    },
+    {
+        "lat": 30.52798,
+        "city": "Picayune",
+        "state": "MS",
+        "lon": -89.66611,
+        "zip": "39466"
+    },
+    {
+        "lat": 37.81109,
+        "city": "Bardstown",
+        "state": "KY",
+        "lon": -85.46164,
+        "zip": "40004"
+    },
+    {
+        "lat": 38.418131,
+        "city": "Flemingsburg",
+        "state": "KY",
+        "lon": -83.72497,
+        "zip": "41041"
+    },
+    {
+        "lat": 37.066543,
+        "city": "Paducah",
+        "state": "KY",
+        "lon": -88.65687,
+        "zip": "42001"
+    },
+    {
+        "lat": 40.295925,
+        "city": "Delaware",
+        "state": "OH",
+        "lon": -83.06968,
+        "zip": "43015"
+    },
+    {
+        "lat": 41.529231,
+        "city": "Archbold",
+        "state": "OH",
+        "lon": -84.30866,
+        "zip": "43502"
+    },
+    {
+        "lat": 40.257082,
+        "city": "Alexandria",
+        "state": "IN",
+        "lon": -85.673,
+        "zip": "46001"
+    },
+    {
+        "lat": 41.616263,
+        "city": "Chesterton",
+        "state": "IN",
+        "lon": -87.05883,
+        "zip": "46304"
+    },
+    {
+        "lat": 38.668827,
+        "city": "Vincennes",
+        "state": "IN",
+        "lon": -87.50791,
+        "zip": "47591"
+    },
+    {
+        "lat": 42.554134,
+        "city": "Clinton Township",
+        "state": "MI",
+        "lon": -82.90786,
+        "zip": "48035"
+    },
+    {
+        "lat": 43.828266,
+        "city": "Clare",
+        "state": "MI",
+        "lon": -84.74219,
+        "zip": "48617"
+    },
+    {
+        "lat": 45.08583,
+        "city": "Alpena",
+        "state": "MI",
+        "lon": -83.46411,
+        "zip": "49707"
+    },
+    {
+        "lat": 46.460895,
+        "city": "Sault Sainte Marie",
+        "state": "MI",
+        "lon": -84.32485,
+        "zip": "49783"
+    },
+    {
+        "lat": 45.87178,
+        "city": "Iron Mountain",
+        "state": "MI",
+        "lon": -87.99717,
+        "zip": "49801"
+    },
+    {
+        "lat": 42.02933,
+        "city": "Ames",
+        "state": "IA",
+        "lon": -93.60966,
+        "zip": "50010"
+    },
+    {
+        "lat": 42.819093,
+        "city": "Akron",
+        "state": "IA",
+        "lon": -96.48967,
+        "zip": "51001"
+    },
+    {
+        "lat": 41.251631,
+        "city": "Council Bluffs",
+        "state": "IA",
+        "lon": -95.87447,
+        "zip": "51501"
+    },
+    {
+        "lat": 42.515252,
+        "city": "Dubuque",
+        "state": "IA",
+        "lon": -90.6794,
+        "zip": "52001"
+    },
+    {
+        "lat": 41.017736,
+        "city": "Fairfield",
+        "state": "IA",
+        "lon": -91.95,
+        "zip": "52556"
+    },
+    {
+        "lat": 43.305412,
+        "city": "Cedarburg",
+        "state": "WI",
+        "lon": -87.99794,
+        "zip": "53012"
+    },
+    {
+        "lat": 45.326339,
+        "city": "Amery",
+        "state": "WI",
+        "lon": -92.37857,
+        "zip": "54001"
+    },
+    {
+        "lat": 44.958382,
+        "city": "Wausau",
+        "state": "WI",
+        "lon": -89.6693,
+        "zip": "54401"
+    },
+    {
+        "lat": 46.577191,
+        "city": "Ashland",
+        "state": "WI",
+        "lon": -90.89707,
+        "zip": "54806"
+    },
+    {
+        "lat": 44.74323,
+        "city": "Hector",
+        "state": "MN",
+        "lon": -94.72447,
+        "zip": "55342"
+    },
+    {
+        "lat": 47.854987,
+        "city": "Cook",
+        "state": "MN",
+        "lon": -92.77077,
+        "zip": "55723"
+    },
+    {
+        "lat": 43.671988,
+        "city": "Austin",
+        "state": "MN",
+        "lon": -92.97908,
+        "zip": "55912"
+    },
+    {
+        "lat": 46.347175,
+        "city": "Baxter",
+        "state": "MN",
+        "lon": -94.27017,
+        "zip": "56425"
+    },
+    {
+        "lat": 47.322444,
+        "city": "Ada",
+        "state": "MN",
+        "lon": -96.51915,
+        "zip": "56510"
+    },
+    {
+        "lat": 48.890886,
+        "city": "Warroad",
+        "state": "MN",
+        "lon": -95.33831,
+        "zip": "56763"
+    },
+    {
+        "lat": 44.305418,
+        "city": "Brookings",
+        "state": "SD",
+        "lon": -96.7906,
+        "zip": "57006"
+    },
+    {
+        "lat": 44.523028,
+        "city": "Miller",
+        "state": "SD",
+        "lon": -99.03397,
+        "zip": "57362"
+    },
+    {
+        "lat": 44.052788,
+        "city": "Rapid City",
+        "state": "SD",
+        "lon": -103.34302,
+        "zip": "57702"
+    },
+    {
+        "lat": 48.797042,
+        "city": "Cavalier",
+        "state": "ND",
+        "lon": -97.69887,
+        "zip": "58220"
+    },
+    {
+        "lat": 48.864955,
+        "city": "Bottineau",
+        "state": "ND",
+        "lon": -100.41403,
+        "zip": "58318"
+    },
+    {
+        "lat": 46.906983,
+        "city": "Jamestown",
+        "state": "ND",
+        "lon": -98.72826,
+        "zip": "58401"
+    },
+    {
+        "lat": 47.290543,
+        "city": "Hazen",
+        "state": "ND",
+        "lon": -101.61207,
+        "zip": "58545"
+    },
+    {
+        "lat": 46.182799,
+        "city": "Bowman",
+        "state": "ND",
+        "lon": -103.40453,
+        "zip": "58623"
+    },
+    {
+        "lat": 48.20496,
+        "city": "Williston",
+        "state": "ND",
+        "lon": -103.71908,
+        "zip": "58801"
+    },
+    {
+        "lat": 45.883409,
+        "city": "Big Timber",
+        "state": "MT",
+        "lon": -109.91891,
+        "zip": "59011"
+    },
+    {
+        "lat": 45.780451,
+        "city": "Hardin",
+        "state": "MT",
+        "lon": -107.63987,
+        "zip": "59034"
+    },
+    {
+        "lat": 48.15381,
+        "city": "Glasgow",
+        "state": "MT",
+        "lon": -106.69558,
+        "zip": "59230"
+    },
+    {
+        "lat": 47.476152,
+        "city": "Great Falls",
+        "state": "MT",
+        "lon": -111.26909,
+        "zip": "59405"
+    },
+    {
+        "lat": 48.680309,
+        "city": "Cut Bank",
+        "state": "MT",
+        "lon": -112.47009,
+        "zip": "59427"
+    },
+    {
+        "lat": 48.584562,
+        "city": "Havre",
+        "state": "MT",
+        "lon": -109.78365,
+        "zip": "59501"
+    },
+    {
+        "lat": 45.996957,
+        "city": "Butte",
+        "state": "MT",
+        "lon": -112.51279,
+        "zip": "59701"
+    },
+    {
+        "lat": 47.540256,
+        "city": "Ronan",
+        "state": "MT",
+        "lon": -114.12898,
+        "zip": "59864"
+    },
+    {
+        "lat": 41.543149,
+        "city": "Mendota",
+        "state": "IL",
+        "lon": -89.10696,
+        "zip": "61342"
+    },
+    {
+        "lat": 40.126854,
+        "city": "Champaign",
+        "state": "IL",
+        "lon": -88.29315,
+        "zip": "61822"
+    },
+    {
+        "lat": 39.127717,
+        "city": "Gillespie",
+        "state": "IL",
+        "lon": -89.8288,
+        "zip": "62033"
+    },
+    {
+        "lat": 36.624115,
+        "city": "Doniphan",
+        "state": "MO",
+        "lon": -90.8615,
+        "zip": "63935"
+    },
+    {
+        "lat": 39.017559,
+        "city": "Blue Springs",
+        "state": "MO",
+        "lon": -94.25767,
+        "zip": "64014"
+    },
+    {
+        "lat": 37.047161,
+        "city": "Joplin",
+        "state": "MO",
+        "lon": -94.51124,
+        "zip": "64804"
+    },
+    {
+        "lat": 38.032648,
+        "city": "Camdenton",
+        "state": "MO",
+        "lon": -92.78269,
+        "zip": "65020"
+    },
+    {
+        "lat": 39.689409,
+        "city": "Frankfort",
+        "state": "KS",
+        "lon": -96.43876,
+        "zip": "66427"
+    },
+    {
+        "lat": 37.68066,
+        "city": "Augusta",
+        "state": "KS",
+        "lon": -96.98153,
+        "zip": "67010"
+    },
+    {
+        "lat": 37.590146,
+        "city": "Greensburg",
+        "state": "KS",
+        "lon": -99.29989,
+        "zip": "67054"
+    },
+    {
+        "lat": 39.409385,
+        "city": "Osborne",
+        "state": "KS",
+        "lon": -98.7059,
+        "zip": "67473"
+    },
+    {
+        "lat": 39.332837,
+        "city": "Goodland",
+        "state": "KS",
+        "lon": -101.75422,
+        "zip": "67735"
+    },
+    {
+        "lat": 37.185269,
+        "city": "Hugoton",
+        "state": "KS",
+        "lon": -101.349,
+        "zip": "67951"
+    },
+    {
+        "lat": 42.516792,
+        "city": "Oneill",
+        "state": "NE",
+        "lon": -98.60341,
+        "zip": "68763"
+    },
+    {
+        "lat": 40.916866,
+        "city": "Grand Island",
+        "state": "NE",
+        "lon": -98.38749,
+        "zip": "68803"
+    },
+    {
+        "lat": 40.317358,
+        "city": "Cambridge",
+        "state": "NE",
+        "lon": -100.17857,
+        "zip": "69022"
+    },
+    {
+        "lat": 41.24058,
+        "city": "Kimball",
+        "state": "NE",
+        "lon": -103.6608,
+        "zip": "69145"
+    },
+    {
+        "lat": 29.692515,
+        "city": "Berwick",
+        "state": "LA",
+        "lon": -91.22938,
+        "zip": "70342"
+    },
+    {
+        "lat": 30.129908,
+        "city": "Lake Charles",
+        "state": "LA",
+        "lon": -93.19632,
+        "zip": "70607"
+    },
+    {
+        "lat": 32.78288,
+        "city": "Homer",
+        "state": "LA",
+        "lon": -93.03176,
+        "zip": "71040"
+    },
+    {
+        "lat": 31.667978,
+        "city": "Ferriday",
+        "state": "LA",
+        "lon": -91.51382,
+        "zip": "71334"
+    },
+    {
+        "lat": 34.038226,
+        "city": "De Queen",
+        "state": "AR",
+        "lon": -94.33597,
+        "zip": "71832"
+    },
+    {
+        "lat": 34.804791,
+        "city": "North Little Rock",
+        "state": "AR",
+        "lon": -92.28925,
+        "zip": "72019"
+    },
+    {
+        "lat": 35.118392,
+        "city": "Blanchard",
+        "state": "OK",
+        "lon": -97.66381,
+        "zip": "73010"
+    },
+    {
+        "lat": 35.405935,
+        "city": "Elk City",
+        "state": "OK",
+        "lon": -99.41658,
+        "zip": "73644"
+    },
+    {
+        "lat": 36.139385,
+        "city": "Sand Springs",
+        "state": "OK",
+        "lon": -96.16523,
+        "zip": "74063"
+    },
+    {
+        "lat": 32.960374,
+        "city": "Carrollton",
+        "state": "TX",
+        "lon": -96.89163,
+        "zip": "75006"
+    },
+    {
+        "lat": 32.557684,
+        "city": "Longview",
+        "state": "TX",
+        "lon": -94.74353,
+        "zip": "75605"
+    },
+    {
+        "lat": 30.998982,
+        "city": "Corrigan",
+        "state": "TX",
+        "lon": -94.7994,
+        "zip": "75939"
+    },
+    {
+        "lat": 32.761058,
+        "city": "Breckenridge",
+        "state": "TX",
+        "lon": -98.92225,
+        "zip": "76424"
+    },
+    {
+        "lat": 31.086483,
+        "city": "Temple",
+        "state": "TX",
+        "lon": -97.40076,
+        "zip": "76502"
+    },
+    {
+        "lat": 31.121411,
+        "city": "Brady",
+        "state": "TX",
+        "lon": -99.3407,
+        "zip": "76825"
+    },
+    {
+        "lat": 31.304669,
+        "city": "Big Lake",
+        "state": "TX",
+        "lon": -101.50841,
+        "zip": "76932"
+    },
+    {
+        "lat": 29.55283,
+        "city": "Houston",
+        "state": "TX",
+        "lon": -95.10265,
+        "zip": "77058"
+    },
+    {
+        "lat": 28.806417,
+        "city": "Victoria",
+        "state": "TX",
+        "lon": -96.99356,
+        "zip": "77901"
+    },
+    {
+        "lat": 29.356455,
+        "city": "Castroville",
+        "state": "TX",
+        "lon": -98.88062,
+        "zip": "78009"
+    },
+    {
+        "lat": 27.542244,
+        "city": "Laredo",
+        "state": "TX",
+        "lon": -99.49233,
+        "zip": "78041"
+    },
+    {
+        "lat": 26.213105,
+        "city": "Mcallen",
+        "state": "TX",
+        "lon": -98.23579,
+        "zip": "78501"
+    },
+    {
+        "lat": 29.404267,
+        "city": "Del Rio",
+        "state": "TX",
+        "lon": -100.88116,
+        "zip": "78840"
+    },
+    {
+        "lat": 35.665899,
+        "city": "Borger",
+        "state": "TX",
+        "lon": -101.40666,
+        "zip": "79007"
+    },
+    {
+        "lat": 34.191002,
+        "city": "Plainview",
+        "state": "TX",
+        "lon": -101.72506,
+        "zip": "79072"
+    },
+    {
+        "lat": 32.976623,
+        "city": "Denver City",
+        "state": "TX",
+        "lon": -102.84661,
+        "zip": "79323"
+    },
+    {
+        "lat": 32.760229,
+        "city": "Snyder",
+        "state": "TX",
+        "lon": -100.95344,
+        "zip": "79549"
+    },
+    {
+        "lat": 31.388404,
+        "city": "Pecos",
+        "state": "TX",
+        "lon": -103.52515,
+        "zip": "79772"
+    },
+    {
+        "lat": 31.782408,
+        "city": "El Paso",
+        "state": "TX",
+        "lon": -106.36353,
+        "zip": "79925"
+    },
+    {
+        "lat": 39.739737,
+        "city": "Aurora",
+        "state": "CO",
+        "lon": -104.80905,
+        "zip": "80011"
+    },
+    {
+        "lat": 37.995879,
+        "city": "La Junta",
+        "state": "CO",
+        "lon": -103.54001,
+        "zip": "81050"
+    },
+    {
+        "lat": 37.471802,
+        "city": "Alamosa",
+        "state": "CO",
+        "lon": -105.83471,
+        "zip": "81101"
+    },
+    {
+        "lat": 37.222311,
+        "city": "Durango",
+        "state": "CO",
+        "lon": -107.653131,
+        "zip": "81303"
+    },
+    {
+        "lat": 38.733901,
+        "city": "Delta",
+        "state": "CO",
+        "lon": -108.08219,
+        "zip": "81416"
+    },
+    {
+        "lat": 40.566113,
+        "city": "Craig",
+        "state": "CO",
+        "lon": -107.60818,
+        "zip": "81625"
+    },
+    {
+        "lat": 41.232815,
+        "city": "Laramie",
+        "state": "WY",
+        "lon": -105.75364,
+        "zip": "82070"
+    },
+    {
+        "lat": 43.993124,
+        "city": "Worland",
+        "state": "WY",
+        "lon": -107.97365,
+        "zip": "82401"
+    },
+    {
+        "lat": 42.844915,
+        "city": "Casper",
+        "state": "WY",
+        "lon": -106.27255,
+        "zip": "82609"
+    },
+    {
+        "lat": 41.594542,
+        "city": "Rock Springs",
+        "state": "WY",
+        "lon": -109.16304,
+        "zip": "82901"
+    },
+    {
+        "lat": 43.468383,
+        "city": "Jackson",
+        "state": "WY",
+        "lon": -110.75714,
+        "zip": "83001"
+    },
+    {
+        "lat": 42.530288,
+        "city": "Twin Falls",
+        "state": "ID",
+        "lon": -114.47509,
+        "zip": "83301"
+    },
+    {
+        "lat": 46.388753,
+        "city": "Lewiston",
+        "state": "ID",
+        "lon": -116.98484,
+        "zip": "83501"
+    },
+    {
+        "lat": 44.079947,
+        "city": "Payette",
+        "state": "ID",
+        "lon": -116.89433,
+        "zip": "83661"
+    },
+    {
+        "lat": 48.30476,
+        "city": "Ponderay",
+        "state": "ID",
+        "lon": -116.53305,
+        "zip": "83852"
+    },
+    {
+        "lat": 40.394235,
+        "city": "American Fork",
+        "state": "UT",
+        "lon": -111.79449,
+        "zip": "84003"
+    },
+    {
+        "lat": 38.765929,
+        "city": "Richfield",
+        "state": "UT",
+        "lon": -112.08397,
+        "zip": "84701"
+    },
+    {
+        "lat": 37.656843,
+        "city": "Cedar City",
+        "state": "UT",
+        "lon": -113.3695,
+        "zip": "84721"
+    },
+    {
+        "lat": 33.511325,
+        "city": "Phoenix",
+        "state": "AZ",
+        "lon": -112.05711,
+        "zip": "85014"
+    },
+    {
+        "lat": 34.100704,
+        "city": "Parker",
+        "state": "AZ",
+        "lon": -114.30462,
+        "zip": "85344"
+    },
+    {
+        "lat": 32.800222,
+        "city": "Safford",
+        "state": "AZ",
+        "lon": -109.69052,
+        "zip": "85546"
+    },
+    {
+        "lat": 31.37737,
+        "city": "Nogales",
+        "state": "AZ",
+        "lon": -110.9264,
+        "zip": "85621"
+    },
+    {
+        "lat": 34.271427,
+        "city": "Show Low",
+        "state": "AZ",
+        "lon": -110.03676,
+        "zip": "85901"
+    },
+    {
+        "lat": 35.279872,
+        "city": "Flagstaff",
+        "state": "AZ",
+        "lon": -111.72256,
+        "zip": "86001"
+    },
+    {
+        "lat": 34.786133,
+        "city": "Los Lunas",
+        "state": "NM",
+        "lon": -106.70536,
+        "zip": "87031"
+    },
+    {
+        "lat": 35.534253,
+        "city": "Gallup",
+        "state": "NM",
+        "lon": -108.84857,
+        "zip": "87301"
+    },
+    {
+        "lat": 33.148245,
+        "city": "Truth Or Consequences",
+        "state": "NM",
+        "lon": -107.18741,
+        "zip": "87901"
+    },
+    {
+        "lat": 33.485178,
+        "city": "Roswell",
+        "state": "NM",
+        "lon": -104.55089,
+        "zip": "88201"
+    },
+    {
+        "lat": 35.103769,
+        "city": "Tucumcari",
+        "state": "NM",
+        "lon": -103.77676,
+        "zip": "88401"
+    },
+    {
+        "lat": 36.045811,
+        "city": "Henderson",
+        "state": "NV",
+        "lon": -115.0778,
+        "zip": "89014"
+    },
+    {
+        "lat": 38.94675,
+        "city": "Yerington",
+        "state": "NV",
+        "lon": -119.11544,
+        "zip": "89447"
+    },
+    {
+        "lat": 40.883028,
+        "city": "Elko",
+        "state": "NV",
+        "lon": -115.75016,
+        "zip": "89801"
+    },
+    {
+        "lat": 34.026448,
+        "city": "Los Angeles",
+        "state": "CA",
+        "lon": -118.2829,
+        "zip": "90007"
+    },
+    {
+        "lat": 32.785,
+        "city": "La Mesa",
+        "state": "CA",
+        "lon": -117.0186,
+        "zip": "91942"
+    },
+    {
+        "lat": 36.085342,
+        "city": "Corcoran",
+        "state": "CA",
+        "lon": -119.5548,
+        "zip": "93212"
+    },
+    {
+        "lat": 34.613014,
+        "city": "Buellton",
+        "state": "CA",
+        "lon": -120.2051,
+        "zip": "93427"
+    },
+    {
+        "lat": 36.754058,
+        "city": "Salinas",
+        "state": "CA",
+        "lon": -121.66472,
+        "zip": "93907"
+    },
+    {
+        "lat": 38.245844,
+        "city": "Fairfield",
+        "state": "CA",
+        "lon": -122.101917,
+        "zip": "94534"
+    },
+    {
+        "lat": 40.793739,
+        "city": "Eureka",
+        "state": "CA",
+        "lon": -124.16102,
+        "zip": "95501"
+    },
+    {
+        "lat": 39.720955,
+        "city": "Chico",
+        "state": "CA",
+        "lon": -121.81888,
+        "zip": "95928"
+    },
+    {
+        "lat": 41.439363,
+        "city": "Alturas",
+        "state": "CA",
+        "lon": -120.58771,
+        "zip": "96101"
+    },
+    {
+        "lat": 19.713562,
+        "city": "Hilo",
+        "state": "HI",
+        "lon": -155.09842,
+        "zip": "96720"
+    },
+    {
+        "lat": 20.883951,
+        "city": "Kahului",
+        "state": "HI",
+        "lon": -156.46579,
+        "zip": "96732"
+    },
+    {
+        "lat": 21.98081,
+        "city": "Lihue",
+        "state": "HI",
+        "lon": -159.37746,
+        "zip": "96766"
+    },
+    {
+        "lat": 45.517695,
+        "city": "Beaverton",
+        "state": "OR",
+        "lon": -122.85826,
+        "zip": "97006"
+    },
+    {
+        "lat": 44.06092,
+        "city": "Eugene",
+        "state": "OR",
+        "lon": -123.08275,
+        "zip": "97401"
+    },
+    {
+        "lat": 42.334496,
+        "city": "Medford",
+        "state": "OR",
+        "lon": -122.83547,
+        "zip": "97504"
+    },
+    {
+        "lat": 44.64079,
+        "city": "Madras",
+        "state": "OR",
+        "lon": -121.12506,
+        "zip": "97741"
+    },
+    {
+        "lat": 45.665146,
+        "city": "Pendleton",
+        "state": "OR",
+        "lon": -118.789,
+        "zip": "97801"
+    },
+    {
+        "lat": 47.304221,
+        "city": "Auburn",
+        "state": "WA",
+        "lon": -122.21602,
+        "zip": "98002"
+    },
+    {
+        "lat": 48.759079,
+        "city": "Bellingham",
+        "state": "WA",
+        "lon": -122.43597,
+        "zip": "98226"
+    },
+    {
+        "lat": 47.133606,
+        "city": "Moses Lake",
+        "state": "WA",
+        "lon": -119.28455,
+        "zip": "98837"
+    },
+    {
+        "lat": 48.689509,
+        "city": "Tonasket",
+        "state": "WA",
+        "lon": -119.32169,
+        "zip": "98855"
+    },
+    {
+        "lat": 61.216799,
+        "city": "Anchorage",
+        "state": "AK",
+        "lon": -149.87828,
+        "zip": "99501"
+    },
+    {
+        "lat": 64.83507,
+        "city": "Fairbanks",
+        "state": "AK",
+        "lon": -147.72045,
+        "zip": "99701"
+    },
+    {
+        "lat": 58.358599,
+        "city": "Juneau",
+        "state": "AK",
+        "lon": -134.54749,
+        "zip": "99801"
+    }
+]
