@@ -1,5 +1,7 @@
+import ast
 import requests
 import json
+import sys
 
 
 def show_obj_head(obj, n_chars=500, n_items=5):
@@ -163,3 +165,69 @@ def read_json(path_to_file):
         data = json.load(f)
 
     return data
+
+
+def clean_list_of_dicts(original_file_path, new_file_path=None, str_fields=None, int_fields=None, float_fields=None):
+    """
+    Reads in a .json file that contains a list of (flat) dictionaries. This function will
+    clean each dictionary and convert any fields specified to strings, ints or floats.
+
+    The function can optionally write out the cleaned data and will ultimately return the cleaned data
+    in the same list of dictionary structure, but with cleaned data types.
+
+    Parameters
+    ----------
+    original_file_path : str
+        Path to the original file
+
+    new_file_path : str
+        Path to the new file to write, optional
+
+    str_fields : list
+        List of fields to convert to str, optional
+
+    int_fields : list
+        List of fields to convert to int, optional
+
+    float_fields : list
+        List of fields to convert to float, optional
+
+    Returns
+    -------
+    data : list (of dicts)
+        Cleaned list of dictionaries
+    """
+    if float_fields is None:
+        float_fields = []
+    if int_fields is None:
+        int_fields = []
+    if str_fields is None:
+        str_fields = []
+
+    try:
+        with open(original_file_path, 'r+') as f:
+            raw_data = f.read()
+            f.close()
+            data = ast.literal_eval(raw_data)
+
+            for entry in data:
+                for key, value in entry.items():
+                    if key in str_fields:
+                        entry[key] = str(value)
+                    elif key in int_fields:
+                        entry[key] = int(value)
+                    elif key in float_fields:
+                        entry[key] = float(value)
+
+        if new_file_path:
+            with open(new_file_path, 'w+', encoding='UTF-8') as writer:
+                json.dump(obj=data, fp=writer, ensure_ascii=True, indent=4)
+
+        return data
+
+    except:
+        exc = sys.exc_info()
+        exc_str = output_exception(exc=exc)
+        output_log(filename='../logs/clean_list_of_dicts.log',
+                   text=exc_str,
+                   append=True)
