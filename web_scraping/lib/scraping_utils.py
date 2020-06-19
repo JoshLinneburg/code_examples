@@ -3,6 +3,8 @@ import requests
 import json
 import sys
 
+from collections.abc import Iterable
+
 
 def show_obj_head(obj, n_chars=500, n_items=5):
     """
@@ -47,10 +49,15 @@ def show_obj_head(obj, n_chars=500, n_items=5):
             print('')
             result = obj
 
+        elif isinstance(obj, set):
+            print(f'The object passed in is a set with {len(obj)} items!')
+            print('')
+            result = obj
+
         return result
 
     except:
-        print('Something went wrong... try another URL or try again.')
+        print('Something went wrong... the object isn\'t a list, dict, set, str or a requests.models.Response')
 
 
 def equivalence_checker(obj_one, obj_two, expected_value):
@@ -264,3 +271,57 @@ def clean_list_of_dicts(original_file_path, new_file_path=None, str_fields=None,
         output_log(filename='../logs/clean_list_of_dicts.log',
                    text=exc_str,
                    append=True)
+
+
+def check_if_iterable(obj):
+    """
+    Checks if the object passed in is an iterable or not.
+
+    Parameters
+    ----------
+    obj : Python object
+        Any Python object you would like to check for iterability.
+
+    Returns
+    -------
+    response : bool
+        True if iterable, False if not.
+    """
+    response = isinstance(obj, Iterable)
+    return response
+
+
+def iterable_to_csv(iterable):
+    """
+    Turns any iterable into a comma-separated string. Replaces new-line, carriage returns, tabs with spaces.
+    Strips off any leading and trailing spaces from each item as well.
+
+    Parameters
+    ----------
+    iterable : Iterable Python object
+        Object you would like to transform into a comma-separated string. Can be a list, set,
+        NumPy array, Pandas Series, a string, etc.
+
+    Returns
+    -------
+    csv_str : string
+        Comma-separated string representation of the iterable passed in.
+    """
+    try:
+        csv_str = ''
+
+        # Method-chaining is cool
+        # Method-chaining inside a list comprehension is cooler
+        cleaned_iterable = [str(item).strip().replace('\n', ' ').replace('\r', ' ').replace('\t', ' ') for item in
+                            iterable]
+
+        for item in cleaned_iterable:
+            csv_str += item + ', '  # Append a comma and space so it's comma-separated
+
+        csv_str = csv_str[:-2]  # Get rid of the last comma and space
+
+        return csv_str
+
+    except TypeError:
+        print('The object you passed in is not iterable!')
+        raise
